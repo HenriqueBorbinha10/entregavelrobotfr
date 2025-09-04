@@ -137,7 +137,7 @@
       <span class="saldo-texto">
         Félicitations, vous avez réalisé vos premiers gains.
       </span>
-      <span id="balance01" class="balance-box-small">BALANCE: U$ 10.75</span>
+      <span id="balance01" class="balance-box-small">SOLDE: U$ 10.75</span>
     </div>
     <img src="imagens/logo.png" alt="Logo"
          class="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto block"
@@ -145,7 +145,7 @@
     <h2 class="text-center text-2xl font-semibold mt-2 w-full">🎥 PANNEAU VIDÉO</h2>
     <div class="bg-[#18181b] rounded-xl p-4 space-y-2 mt-4 w-full">
       <div id="toggle-handle" class="flex justify-between items-center cursor-pointer">
-        <label class="font-bold text-lg">Enter your TikTok</label><span>﹀</span>
+        <label class="font-bold text-lg">Entrez votre TikTok</label><span>﹀</span>
       </div>
       <input id="handle" type="text" placeholder="@your_tiktok_handle" class="w-full bg-[#1f1f1f] p-3 rounded-md focus:outline-none hidden" />
     </div>
@@ -200,7 +200,7 @@
       <span class="saldo-texto text-left">
         Nous avons déjà identifié votre TikTok pour les paiements.
       </span>
-      <span id="balance02" class="balance-box-small">BALANCE: U$ 22.88</span>
+      <span id="balance02" class="balance-box-small">SOLDE: U$ 22.88</span>
     </div>
     <h2 class="text-2xl font-semibold mb-5">🌀 Envoi de vidéos...</h2>
     <video src="imagens/vdeottkpulse.mp4" autoplay muted loop playsinline class="mx-auto mb-4 w-64 sm:w-96 rounded-lg"></video>
@@ -225,7 +225,7 @@
       <span class="saldo-texto">
         Publiez les vidéos pour que vos paiements soient envoyés.
       </span>
-      <span id="balance03" class="balance-box-small">BALANCE: U$ 31.45</span>
+      <span id="balance03" class="balance-box-small">SOLDE: U$ 31.45</span>
     </div>
     <h1 class="text-3xl sm:text-4xl font-bold mb-0 text-center">VIDÉOS GÉNÉRÉES</h1>
     <p id="subtitle" class="text-gray-300 text-base sm:text-lg mb-0 text-center mt-3">
@@ -330,26 +330,26 @@
 
   function startBalance01() {
     clearInterval(interval1);
-    document.getElementById('balance01').textContent = `BALANCE: € ${balance1.toFixed(2)}`;
+    document.getElementById('balance01').textContent = `SOLDE: € ${balance1.toFixed(2)}`;
     interval1 = setInterval(() => {
       balance1 *= 1.03;
-      document.getElementById('balance01').textContent = `BALANCE: € ${balance1.toFixed(2)}`;
+      document.getElementById('balance01').textContent = `SOLDE: € ${balance1.toFixed(2)}`;
     }, stepTime);
   }
   function startBalance02() {
     clearInterval(interval2);
-    document.getElementById('balance02').textContent = `BALANCE: € ${balance2.toFixed(2)}`;
+    document.getElementById('balance02').textContent = `SOLDE: € ${balance2.toFixed(2)}`;
     interval2 = setInterval(() => {
       balance2 *= 1.03;
-      document.getElementById('balance02').textContent = `BALANCE: € ${balance2.toFixed(2)}`;
+      document.getElementById('balance02').textContent = `SOLDE: € ${balance2.toFixed(2)}`;
     }, stepTime);
   }
   function startBalance03() {
     clearInterval(interval3);
-    document.getElementById('balance03').textContent = `BALANCE: € ${balance3.toFixed(2)}`;
+    document.getElementById('balance03').textContent = `SOLDE: € ${balance3.toFixed(2)}`;
     interval3 = setInterval(() => {
       balance3 *= 1.03;
-      document.getElementById('balance03').textContent = `BALANCE: € ${balance3.toFixed(2)}`;
+      document.getElementById('balance03').textContent = `SOLDE: € ${balance3.toFixed(2)}`;
     }, stepTime);
   }
   // Chama o saldo nas etapas corretas
